@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 3 - Date</title>
+    </head>
+    <body>
+        <h2>Manipulation des dates</h2>
+        <input type="text" id="dateSaisie" placeholder="JJ-MM-AAAA">
+        <button onclick="afficherDate()">Afficher</button>
+
+        <p id="jour"></p>
+        <p id="mois"></p>
+        <p id="annee"></p>
+        <p id="diff"></p>
+
+        <script>
+            function afficherDate() {
+                let saisie = document.getElementById("dateSaisie").value;
+                let [jour, mois, annee] = saisie.split("-").map(Number);
+                let d= new Date(annee, mois - 1, jour);
+
+                document.getElementById("jour").textContent="Jour: " + d.getDate();
+                document.getElementById("mois").textContent="Mois: " + (d.getMonth()+1);
+                document.getElementById("annee").textContent="Année: " + d.getFullYear();
+
+                let aujourdHui=new Date();
+                let diffMs = aujourdHui-d;
+                let diffJours=Math.floor(diffMs / (1000 * 60 * 60 * 24));
+                document.getElementById("diff").textContent="Différence en jours avec aujourd'hui: " + diffJours;
+            }
+        </script>
+    </body>
+</html>
