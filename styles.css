@@ -61,6 +61,10 @@ section {
 #apropos h2 {
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
+}
+#apropos {
+    gap: 50px;
 }
 
 .liste-projets {
@@ -264,3 +268,4 @@ footer {
 
 
 }
+
