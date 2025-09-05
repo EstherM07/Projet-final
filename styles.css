@@ -142,6 +142,15 @@ footer {
     object-fit: cover;
     border: turquoise;
 }
+.section-contents .texte { 
+    flex: 1; 
+    max-width: 500px; 
+} 
+.section-contents .photo { 
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center; 
+}
 
 .contact {
     background: black;
@@ -228,7 +237,6 @@ footer {
     color: turquoise;
 }
 
-/* 📱 Responsive Design */
 @media (max-width: 600px) {
     header nav {
         flex-direction: column;
@@ -266,5 +274,6 @@ footer {
 
 
 }
+
 
 
