@@ -63,9 +63,6 @@ section {
     margin-bottom: 20px;
     width: 100%;
 }
-#apropos {
-    gap: 50px;
-}
 
 .liste-projets {
     background: white;
@@ -122,11 +119,12 @@ footer {
 .section-contents {
     background: #f9f9fb;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 50px 20px;
     justify-content: center;
     text-align: left;
-    gap: 30px; /* réduit l’espace entre texte et image */
+    gap: 50px; 
 }
 
 .section-content .photo img {
@@ -268,4 +266,5 @@ footer {
 
 
 }
+
 
